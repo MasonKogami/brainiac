@@ -1,0 +1,4 @@
+DB Alembic Commands
+pipenv run flask db init - initialize db
+pipenv run flask db migrate -m "created [enter table name] table" - creates table migration version
+pipenv run flask db upgrade - migrates changes to PostgreSQL DB

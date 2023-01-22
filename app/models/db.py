@@ -9,7 +9,7 @@ db = SQLAlchemy()
 
 # function to add a prefix to table names in prod \
 def add_prefix_for_prod(attr):
-  if environment === "production":
+  if environment == "production":
     return f"{SCHEMA}.{attr}"
   else:
     return attr 
